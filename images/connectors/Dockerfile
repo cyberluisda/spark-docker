@@ -1,4 +1,4 @@
-FROM cyberluisda/spark-docker:2.1
+FROM cyberluisda/spark:2.1
 
 MAINTAINER Luis David Barrios Alfonso (luisdavid.barrios@agsnasoft.com / cyberluisda@gmail.com)
 
