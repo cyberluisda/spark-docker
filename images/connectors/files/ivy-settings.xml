@@ -1,0 +1,9 @@
+<ivysettings>
+  <settings defaultResolver='chain-js'/>
+  <resolvers>
+    <chain name='chain-js' dual="true">
+      <ibiblio name='spark-jobserver' m2compatible='true' root='https://dl.bintray.com/spark-jobserver/maven/' />
+      <ibiblio name="public" m2compatible="true"/>
+    </chain>
+  </resolvers>
+</ivysettings>
