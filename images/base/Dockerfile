@@ -13,6 +13,9 @@ RUN mv /usr/lib/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} /usr/lib/spar
 ENV SPARK_HOME /usr/lib/spark
 ENV PATH $PATH:/usr/lib/spark/bin
 
+#install ivy
+RUN apt-get update && apt-get install ivy && rm -rf /var/lib/apt/lists/*
+
 EXPOSE 4040
 VOLUME /var/lib/spark-extra /var/data/spark
 
