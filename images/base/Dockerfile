@@ -22,4 +22,4 @@ RUN apt-get update && apt-get install ivy && rm -rf /var/lib/apt/lists/*
 EXPOSE 4040
 VOLUME /var/lib/spark-extra /var/data/spark
 
-WORKDIR /var/data/spark
+WORKDIR /var/work
