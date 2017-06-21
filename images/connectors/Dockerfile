@@ -1,6 +1,6 @@
 FROM cyberluisda/spark:2.1.1
 
-MAINTAINER Luis David Barrios Alfonso (luisdavid.barrios@agsnasoft.com / cyberluisda@gmail.com)
+MAINTAINER Luis David Barrios Alfonso (cyberluisda@gmail.com)
 
 #add spark extra  libs
 RUN mkdir -p /usr/lib/spark/third
