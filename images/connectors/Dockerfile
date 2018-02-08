@@ -7,7 +7,7 @@ RUN mkdir -p /usr/lib/spark/third
 ADD files/ivy.xml files/ivy-settings.xml /usr/lib/spark/third/
 RUN java -jar /usr/share/java/ivy.jar -settings /usr/lib/spark/third/ivy-settings.xml -ivy /usr/lib/spark/third/ivy.xml -retrieve "/usr/lib/spark/third/[artifact].[ext]"
 
-ENV ES_CONNECTOR_VERSION 5.6.4
+ENV ES_CONNECTOR_VERSION 6.1.3
 # Elastic search connector now is extracted from zip
 RUN curl \
     -sLo /tmp/elasticsearch-hadoop-${ES_CONNECTOR_VERSION}.zip \
