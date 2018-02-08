@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 
-MAINTAINER Luis David Barrios Alfonso (cyberluisda@gmail.com)
+LABEL maintainer="Luis David Barrios Alfonso (cyberluisda@gmail.com)"
 
 
 ENV SPARK_VERSION 2.1.1
