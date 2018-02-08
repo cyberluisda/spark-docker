@@ -2,8 +2,6 @@
     <info organisation="com.ericsson.ivi" module="jobserver-deps"/>
     <configurations defaultconfmapping="default"/>
     <dependencies>
-        <!-- Elastic search connector is not compatible with spark 2.1.1 -->
-        <!-- dependency org="org.elasticsearch" name="elasticsearch-spark-20_2.11" rev="5.1.1" / -->
         <dependency org="org.apache.spark" name="spark-streaming-kafka-0-10_2.11" rev="2.1.1"/>
         <dependency org="com.datastax.spark" name="spark-cassandra-connector-unshaded_2.11" rev="2.0.2" />
     </dependencies>
