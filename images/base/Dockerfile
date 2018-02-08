@@ -11,13 +11,15 @@ RUN cd /usr/lib && tar -zxvf spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.
 RUN mv /usr/lib/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} /usr/lib/spark && rm -fr /usr/lib/spark/examples
 
 #Add hadoop s3 support
+ENV HADOOP_AWS_VERSION 2.8.1
+ENV AWS_JAVA_SDK_VERSION 1.11.273
 RUN \
   curl \
-    "https://search.maven.org/remotecontent?filepath=org/apache/hadoop/hadoop-aws/2.8.1/hadoop-aws-2.8.1.jar" \
-    -o /usr/lib/spark/jars/hadoop-aws-2.8.1.jar && \
+    "https://search.maven.org/remotecontent?filepath=org/apache/hadoop/hadoop-aws/${HADOOP_AWS_VERSION}/hadoop-aws-${HADOOP_AWS_VERSION}.jar" \
+    -o /usr/lib/spark/jars/hadoop-aws-${HADOOP_AWS_VERSION}.jar && \
   curl \
-    "https://search.maven.org/remotecontent?filepath=com/amazonaws/aws-java-sdk/1.11.152/aws-java-sdk-1.11.152.jar" \
-    -o /usr/lib/spark/jars/aws-java-sdk-1.11.152.jar
+    "https://search.maven.org/remotecontent?filepath=com/amazonaws/aws-java-sdk/${AWS_JAVA_SDK_VERSION}/aws-java-sdk-${AWS_JAVA_SDK_VERSION}.jar" \
+    -o /usr/lib/spark/jars/aws-java-sdk-${AWS_JAVA_SDK_VERSION}.jar
 
 ENV SPARK_HOME /usr/lib/spark
 ENV PATH $PATH:/usr/lib/spark/bin
