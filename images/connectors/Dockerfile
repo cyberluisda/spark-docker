@@ -1,6 +1,7 @@
-FROM cyberluisda/spark:2.1.1
+FROM cyberluisda/spark:2.1.2
 
-MAINTAINER Luis David Barrios Alfonso (cyberluisda@gmail.com)
+LABEL maintainer="Luis David Barrios Alfonso (cyberluisda@gmail.com)"
+
 
 #add spark extra  libs
 RUN mkdir -p /usr/lib/spark/third
