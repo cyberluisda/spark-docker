@@ -2,8 +2,7 @@ FROM openjdk:8-jdk
 
 LABEL maintainer="Luis David Barrios Alfonso (cyberluisda@gmail.com)"
 
-
-ENV SPARK_VERSION 2.1.1
+ENV SPARK_VERSION 2.1.2
 ENV HADOOP_VERSION 2.7
 #ADD http://apache.rediris.es/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz /usr/lib
 ADD http://mirrors.ocf.berkeley.edu/apache/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz /usr/lib

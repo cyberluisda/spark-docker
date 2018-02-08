@@ -1,4 +1,5 @@
-FROM cyberluisda/spark:2.1.1
+FROM cyberluisda/spark:2.1.2
+
 LABEL maintainer="Luis David Barrios Alfonso (cyberluisda@gmail.com)"
 
 
